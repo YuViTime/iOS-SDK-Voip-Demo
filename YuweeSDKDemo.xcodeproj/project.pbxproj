@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83597A906FF4D8A6DC34DAD2 /* Pods_YuweeSDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D4E4FD9D225013DA677316 /* Pods_YuweeSDKDemo.framework */; };
+		C8F2D67324EE378400DA493A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F2D67224EE378400DA493A /* AppDelegate.swift */; };
+		C8F2D67724EE378400DA493A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F2D67624EE378400DA493A /* ViewController.swift */; };
+		C8F2D67A24EE378400DA493A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8F2D67824EE378400DA493A /* Main.storyboard */; };
+		C8F2D67C24EE378B00DA493A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8F2D67B24EE378B00DA493A /* Assets.xcassets */; };
+		C8F2D67F24EE378B00DA493A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8F2D67D24EE378B00DA493A /* LaunchScreen.storyboard */; };
+		C8F2D6A824EE4B5300DA493A /* YuWeeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8F2D6A424EE4AF200DA493A /* YuWeeSDK.framework */; };
+		C8F2D6A924EE4B5300DA493A /* YuWeeSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C8F2D6A424EE4AF200DA493A /* YuWeeSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C8F2D6B224EE5B3A00DA493A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F2D6B024EE5B3A00DA493A /* LoginViewController.swift */; };
+		C8F2D6B324EE5B3A00DA493A /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8F2D6B124EE5B3A00DA493A /* LoginViewController.xib */; };
+		C8F2D6B824EE5F5D00DA493A /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F2D6B624EE5F5D00DA493A /* CallViewController.swift */; };
+		C8F2D6B924EE5F5D00DA493A /* CallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8F2D6B724EE5F5D00DA493A /* CallViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C8F2D6AA24EE4B5400DA493A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C8F2D6A924EE4B5300DA493A /* YuWeeSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		18F3D8775C7C13CD357D97E4 /* Pods-YuweeSDKDemo-YuweeSDKDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuweeSDKDemo-YuweeSDKDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-YuweeSDKDemo-YuweeSDKDemoUITests/Pods-YuweeSDKDemo-YuweeSDKDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2710F74215EA662D980EE9BC /* Pods-YuweeSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuweeSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-YuweeSDKDemo/Pods-YuweeSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		69D4E4FD9D225013DA677316 /* Pods_YuweeSDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YuweeSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75131FF620C1E4EEB7FB3E60 /* Pods-YuweeSDKDemo-YuweeSDKDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuweeSDKDemo-YuweeSDKDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-YuweeSDKDemo-YuweeSDKDemoUITests/Pods-YuweeSDKDemo-YuweeSDKDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		766D85470C951EBE7460129A /* Pods-YuweeSDKDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuweeSDKDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-YuweeSDKDemoTests/Pods-YuweeSDKDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		88B460741AF1AC56368A5124 /* Pods-YuweeSDKDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuweeSDKDemoTests.release.xcconfig"; path = "Target Support Files/Pods-YuweeSDKDemoTests/Pods-YuweeSDKDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		AEAFEF157E8006D25EA55F6B /* Pods_YuweeSDKDemo_YuweeSDKDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YuweeSDKDemo_YuweeSDKDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7DA54506B06A5A5D581D31A /* Pods-YuweeSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuweeSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-YuweeSDKDemo/Pods-YuweeSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C8F2D66F24EE378400DA493A /* YuweeSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YuweeSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8F2D67224EE378400DA493A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C8F2D67624EE378400DA493A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C8F2D67924EE378400DA493A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C8F2D67B24EE378B00DA493A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C8F2D67E24EE378B00DA493A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C8F2D68024EE378B00DA493A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8F2D6A224EE44D300DA493A /* YuweeSDKDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YuweeSDKDemo.entitlements; sourceTree = "<group>"; };
+		C8F2D6A424EE4AF200DA493A /* YuWeeSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YuWeeSDK.framework; sourceTree = "<group>"; };
+		C8F2D6A624EE4AF200DA493A /* YuweeSDKDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YuweeSDKDemoTests.swift; sourceTree = "<group>"; };
+		C8F2D6A724EE4AF200DA493A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8F2D6B024EE5B3A00DA493A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C8F2D6B124EE5B3A00DA493A /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		C8F2D6B624EE5F5D00DA493A /* CallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
+		C8F2D6B724EE5F5D00DA493A /* CallViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallViewController.xib; sourceTree = "<group>"; };
+		E8035481DA1685D9F6C8D83E /* Pods_YuweeSDKDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YuweeSDKDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8F2D66C24EE378400DA493A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83597A906FF4D8A6DC34DAD2 /* Pods_YuweeSDKDemo.framework in Frameworks */,
+				C8F2D6A824EE4B5300DA493A /* YuWeeSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C4752C242812FC03823B602 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2710F74215EA662D980EE9BC /* Pods-YuweeSDKDemo.debug.xcconfig */,
+				C7DA54506B06A5A5D581D31A /* Pods-YuweeSDKDemo.release.xcconfig */,
+				75131FF620C1E4EEB7FB3E60 /* Pods-YuweeSDKDemo-YuweeSDKDemoUITests.debug.xcconfig */,
+				18F3D8775C7C13CD357D97E4 /* Pods-YuweeSDKDemo-YuweeSDKDemoUITests.release.xcconfig */,
+				766D85470C951EBE7460129A /* Pods-YuweeSDKDemoTests.debug.xcconfig */,
+				88B460741AF1AC56368A5124 /* Pods-YuweeSDKDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C8F2D66624EE378400DA493A = {
+			isa = PBXGroup;
+			children = (
+				C8F2D67124EE378400DA493A /* YuweeSDKDemo */,
+				C8F2D67024EE378400DA493A /* Products */,
+				3C4752C242812FC03823B602 /* Pods */,
+				EE22BB11354DBD4F6CA901C7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C8F2D67024EE378400DA493A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8F2D66F24EE378400DA493A /* YuweeSDKDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8F2D67124EE378400DA493A /* YuweeSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C8F2D6A224EE44D300DA493A /* YuweeSDKDemo.entitlements */,
+				C8F2D67224EE378400DA493A /* AppDelegate.swift */,
+				C8F2D67624EE378400DA493A /* ViewController.swift */,
+				C8F2D6B424EE5C9D00DA493A /* LoginViewController */,
+				C8F2D6B524EE5F3B00DA493A /* CallViewController */,
+				C8F2D67824EE378400DA493A /* Main.storyboard */,
+				C8F2D67B24EE378B00DA493A /* Assets.xcassets */,
+				C8F2D67D24EE378B00DA493A /* LaunchScreen.storyboard */,
+				C8F2D68024EE378B00DA493A /* Info.plist */,
+			);
+			path = YuweeSDKDemo;
+			sourceTree = "<group>";
+		};
+		C8F2D6A524EE4AF200DA493A /* YuweeSDKDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C8F2D6A624EE4AF200DA493A /* YuweeSDKDemoTests.swift */,
+				C8F2D6A724EE4AF200DA493A /* Info.plist */,
+			);
+			path = YuweeSDKDemoTests;
+			sourceTree = "<group>";
+		};
+		C8F2D6B424EE5C9D00DA493A /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C8F2D6B024EE5B3A00DA493A /* LoginViewController.swift */,
+				C8F2D6B124EE5B3A00DA493A /* LoginViewController.xib */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		C8F2D6B524EE5F3B00DA493A /* CallViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C8F2D6B624EE5F5D00DA493A /* CallViewController.swift */,
+				C8F2D6B724EE5F5D00DA493A /* CallViewController.xib */,
+			);
+			path = CallViewController;
+			sourceTree = "<group>";
+		};
+		EE22BB11354DBD4F6CA901C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8F2D6A424EE4AF200DA493A /* YuWeeSDK.framework */,
+				C8F2D6A524EE4AF200DA493A /* YuweeSDKDemoTests */,
+				69D4E4FD9D225013DA677316 /* Pods_YuweeSDKDemo.framework */,
+				AEAFEF157E8006D25EA55F6B /* Pods_YuweeSDKDemo_YuweeSDKDemoUITests.framework */,
+				E8035481DA1685D9F6C8D83E /* Pods_YuweeSDKDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C8F2D66E24EE378400DA493A /* YuweeSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8F2D69924EE378C00DA493A /* Build configuration list for PBXNativeTarget "YuweeSDKDemo" */;
+			buildPhases = (
+				A36E61103246A8A1C1AE9D84 /* [CP] Check Pods Manifest.lock */,
+				C8F2D66B24EE378400DA493A /* Sources */,
+				C8F2D66C24EE378400DA493A /* Frameworks */,
+				C8F2D66D24EE378400DA493A /* Resources */,
+				C8F2D6AA24EE4B5400DA493A /* Embed Frameworks */,
+				437211499571C86225F4B690 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YuweeSDKDemo;
+			productName = YuweeSDKDemo;
+			productReference = C8F2D66F24EE378400DA493A /* YuweeSDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8F2D66724EE378400DA493A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = yuwee;
+				TargetAttributes = {
+					C8F2D66E24EE378400DA493A = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = C8F2D66A24EE378400DA493A /* Build configuration list for PBXProject "YuweeSDKDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C8F2D66624EE378400DA493A;
+			productRefGroup = C8F2D67024EE378400DA493A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8F2D66E24EE378400DA493A /* YuweeSDKDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C8F2D66D24EE378400DA493A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8F2D6B324EE5B3A00DA493A /* LoginViewController.xib in Resources */,
+				C8F2D67F24EE378B00DA493A /* LaunchScreen.storyboard in Resources */,
+				C8F2D67C24EE378B00DA493A /* Assets.xcassets in Resources */,
+				C8F2D67A24EE378400DA493A /* Main.storyboard in Resources */,
+				C8F2D6B924EE5F5D00DA493A /* CallViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		437211499571C86225F4B690 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YuweeSDKDemo/Pods-YuweeSDKDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YuweeSDKDemo/Pods-YuweeSDKDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YuweeSDKDemo/Pods-YuweeSDKDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A36E61103246A8A1C1AE9D84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YuweeSDKDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8F2D66B24EE378400DA493A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8F2D6B224EE5B3A00DA493A /* LoginViewController.swift in Sources */,
+				C8F2D67724EE378400DA493A /* ViewController.swift in Sources */,
+				C8F2D6B824EE5F5D00DA493A /* CallViewController.swift in Sources */,
+				C8F2D67324EE378400DA493A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C8F2D67824EE378400DA493A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8F2D67924EE378400DA493A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C8F2D67D24EE378B00DA493A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8F2D67E24EE378B00DA493A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C8F2D69724EE378C00DA493A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C8F2D69824EE378C00DA493A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C8F2D69A24EE378C00DA493A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2710F74215EA662D980EE9BC /* Pods-YuweeSDKDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = YuweeSDKDemo/YuweeSDKDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0;
+				DEVELOPMENT_TEAM = 359D4SWRZC;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = YuweeSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuwee.YuweeSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Yuwee SDK Demo Dev";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C8F2D69B24EE378C00DA493A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7DA54506B06A5A5D581D31A /* Pods-YuweeSDKDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = YuweeSDKDemo/YuweeSDKDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0;
+				DEVELOPMENT_TEAM = 359D4SWRZC;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = YuweeSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuwee.YuweeSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Yuwee SDK Demo Dev";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8F2D66A24EE378400DA493A /* Build configuration list for PBXProject "YuweeSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8F2D69724EE378C00DA493A /* Debug */,
+				C8F2D69824EE378C00DA493A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8F2D69924EE378C00DA493A /* Build configuration list for PBXNativeTarget "YuweeSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8F2D69A24EE378C00DA493A /* Debug */,
+				C8F2D69B24EE378C00DA493A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C8F2D66724EE378400DA493A /* Project object */;
+}

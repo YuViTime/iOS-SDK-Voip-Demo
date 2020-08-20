@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CallViewController" customModule="YuweeSDKDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="localView" destination="u7v-2a-UlP" id="Ejo-hu-i9u"/>
+                <outlet property="remoteView" destination="FGd-c3-1yf" id="Yxo-JW-wz0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u7v-2a-UlP" customClass="YuweeLocalVideoView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FGd-c3-1yf" customClass="YuweeRemoteVideoView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vh2-lb-zPe">
+                    <rect key="frame" x="161" y="584" width="53" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="53" id="RHZ-4h-CvV"/>
+                        <constraint firstAttribute="height" constant="53" id="eNf-Yt-3zd"/>
+                    </constraints>
+                    <state key="normal" image="end"/>
+                    <connections>
+                        <action selector="callEnd:" destination="-1" eventType="touchUpInside" id="naq-SE-VNA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="u7v-2a-UlP" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="4FP-n3-WYM"/>
+                <constraint firstItem="u7v-2a-UlP" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="4Zz-kj-8Bf"/>
+                <constraint firstItem="u7v-2a-UlP" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="5hk-mg-gUP"/>
+                <constraint firstItem="u7v-2a-UlP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PTt-rl-ACi"/>
+                <constraint firstItem="u7v-2a-UlP" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="ZgZ-SL-b8h"/>
+                <constraint firstItem="Vh2-lb-zPe" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="aC0-Mr-Xhd"/>
+                <constraint firstItem="FGd-c3-1yf" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="bUa-tw-U83"/>
+                <constraint firstItem="FGd-c3-1yf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="fhp-5g-IRu"/>
+                <constraint firstItem="FGd-c3-1yf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fkd-Dw-XWg"/>
+                <constraint firstAttribute="trailing" secondItem="FGd-c3-1yf" secondAttribute="trailing" id="lzI-n7-5RV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Vh2-lb-zPe" secondAttribute="bottom" constant="30" id="mFV-kK-0Dl"/>
+                <constraint firstItem="u7v-2a-UlP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="nPV-b0-W7G"/>
+                <constraint firstAttribute="bottom" secondItem="FGd-c3-1yf" secondAttribute="bottom" id="vsb-lZ-fHt"/>
+                <constraint firstItem="FGd-c3-1yf" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="ys0-P2-rQ7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="132.68365817091455"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="end" width="53" height="53"/>
+    </resources>
+</document>
